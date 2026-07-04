@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tables</title>
+    </head>
+
+    <body>
+        <h1>Tables</h1>
+        <p>This section is about tables</p>
+
+        <h2>Basic Table</h2>
+        <p>This is a bais table</p>
+        <table border="1">
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+        </table>
+
+        <h2>Table Headers</h2>
+        <p>This is a table with headers</p>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>25</td>
+                <td>London Lorem ipsum dolor sit, amet consectetur...</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>30</td>
+                <td>NYC</td>
+            </tr>
+        </table>
+
+        <h2>Table Sections</h2>
+        <p>You can put your table into sections for screen readers and CSS</p>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Coffee</td>
+                    <td>$1.00</td>
+                </tr>
+                <tr>
+                    <td>Donut</td>
+                    <td>$2.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>$3.00</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Spanning Rows and Columns</h2>
+        <p>Sometimes you'd want a cell to span across multiple columns</p>
+        <table border="1">
+            <caption>Menu Items</caption>
+            <tr>
+                <th>Category</th>
+                <th>Meal Type</th>
+                <th>Cost</th>
+                <th>Calories</th>
+            </tr>
+            <tr>
+                <td rowspan="2"><b>Food Items</b></td>
+                <td>Donut</td>
+                <td>$2.00</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>$0.20</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><b>Drinks</b></td>
+                <td>Coffee</td>
+                <td>$2.00</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Orange Juice</td>
+                <td>$3.00</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: center;">ALL PRICES FINAL, NO RETURNS</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
