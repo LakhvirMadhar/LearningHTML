@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms - Simple Inputs</title>
+    </head>
+
+    <body>
+        <h1>Forms - Simple Inputs</h1>
+        <p>
+        On the internet, users will have to send data to a website via some sort of input.
+        Forms are how users would actually input that data.
+        </p>
+        <p>This one is about having simple inputs</p>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your name">
+
+            <p>Passwords should be masked with dots:</p>
+            <label for="pw">Password:</label>
+            <input type="password" id="pw" name="password" placeholder="Password here please">
+
+            <p>Emails are like text type, but the browser will check for the @ symbol!</p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@mail.com">
+
+            <p>This label is for numbers with a spinner to increase/decrease values by clicking</p>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0" max="120" placeholder="0">
+
+            <p>We can do a standardized date format</p>
+            <label for="bday">Birthdate:</label>
+            <input type="date" id="bday" name="birthday" min="1900-01-01" max="2200-01-01">
+
+            <p>We can do a color picker</p>
+            <label for="fav">Favorite color:</label>
+            <input type="color" id="fav" name="fav_color" value="#4c00ff">
+
+            <p>A <code>&lt;range&gt;</code> tag shows a horizontal slider b/w a min and max value</p>
+            <label for="vol">Volume: </label>
+            <input type="range" id="vol" name="Volume" min="0" max="100">
+
+            <p>We can do a file upload!</p>
+            <label for="pic">Upload a photo:</label>
+            <input type="file" id="pic" name="photo">
+        </form>
+    </body>
+</html>
